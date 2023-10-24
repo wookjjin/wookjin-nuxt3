@@ -5,6 +5,12 @@ export default defineNuxtConfig({
       title: 'Nuxt3 Start'
     }
   },
+  routeRules: {
+    // Homepage pre-rendered at build time
+    '/': { prerender: true },
+    // Add cors headers on API routes
+    // '/api/**': { cors: true },
+  },
   css: ["~/assets/css/main.scss"],
   devtools: { enabled: true },
   modules: [
@@ -29,6 +35,10 @@ export default defineNuxtConfig({
     config: {}
   },
   pinia: {
-    autoImports: ['defineStore'],
+    // Auto imports: https://pinia.vuejs.org/ssr/nuxt.html#Auto-imports
+    // storesDirs: ['./stores/**', './custom-folder/stores/**'],
   },
+  typescript: {
+    typeCheck: true
+  }
 })
