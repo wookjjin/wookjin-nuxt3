@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     // Add cors headers on API routes
     // '/api/**': { cors: true },
   },
-  css: ["~/assets/css/main.scss"],
+  css: ['~/assets/css/main.scss'],
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@pinia/nuxt',
     '@vee-validate/nuxt',
+    '@nuxtjs/eslint-module'
   ],
   veeValidate: {
     // disable or enable auto imports

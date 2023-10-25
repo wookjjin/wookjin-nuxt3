@@ -1,11 +1,11 @@
-<template>
-  <div>
-
-  </div>
-</template>
-
 <script setup lang="ts">
 
 </script>
 
-<style scoped></style>ß
+<template>
+  <div>
+    Hello World!
+  </div>
+</template>
+
+<style scoped></style>
